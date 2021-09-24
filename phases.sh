@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ $# -lt 1 ]; then
-    echo 'bad'
+    echo "usage: $0 <moon number> <moonfile>" 1>&2
     exit 1
 fi
 AWKSTRING='BEGIN{RS="\t"; FS="#\n"} {print '
